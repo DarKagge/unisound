@@ -1,16 +1,23 @@
 @import "bourbon";
 @import "vars.scss";
+@import "../libs/lightslider/dist/css/lightslider.min.css";
+@import "../libs/swiper/dist/css/swiper.min.css";
 
 body{
-	font-size: 16px;
+	font-size: 14px;
 	min-width: 320px;
 	position: relative;
 	line-height: 1.6;
-	font-family: "RobotoRegular", sans-serif;
+	font-family: RobotoSlabRegular;
 	overflow-x: hidden;
 	background-color: #fff;
+	color: #000;
 }
-
+.inner{
+	max-width: 1230px;
+	margin: 0 auto;
+	position: relative;
+}
 a,button,input,textarea{
 	text-decoration: none;
 	outline: 0;
@@ -36,4 +43,229 @@ button{
 	width: 960px;
 	margin: 0 auto;
 	overflow: hidden;
+}
+header{
+	background-image: url("../img/head-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+body .buttons{
+	a{
+		display: inline-block;
+		background-color: #8e44ad;
+		color: #fff;
+		font-family:RobotoSlabBold;
+		border-radius: 25px;
+		&:hover{
+			text-decoration: none;
+			background-color: darken(#8e44ad,10);
+		}
+	}
+	button{
+		display: inline-block;
+		background-color: #8e44ad;
+		color: #fff;
+		font-family:RobotoSlabBold;
+		border-radius: 25px;
+		&:hover{
+			text-decoration: none;
+			background-color: darken(#8e44ad,10);
+		}
+	}
+}
+.top-line{
+	background-color: rgba(0,0,0,0.7);
+}
+
+.top-line-menu{
+	li{
+		float: left;
+	}
+	a{
+		display: block;
+		margin-right: 42px;
+		font-size:14px;
+		line-height: 13px;
+		color: #fff;
+		text-transform: uppercase;
+		padding: 13px 0;
+	}
+}
+.social-all{
+	padding-top: 5px;
+	min-width: 139px;
+	padding-right: 10px;
+}
+.search-button{
+	float: left;
+	padding-right: 16px;
+	a{
+		background-color: #898989;
+		width:26px;
+		height: 25px;
+		border-radius: 120px;
+		background-image: url("../img/search.png");
+		background-position: center 6px;
+		background-repeat: no-repeat;
+		display: block;
+
+	}
+}
+
+.social{
+	text-align: center;
+	li{
+		float: left;
+		a{
+			display: block;
+			margin: 0 2px;
+		}
+	}
+}
+
+.top-white-line{
+	background-color: #fff;
+	padding-top: 20px;
+}
+
+.logo{
+	padding-top: 6px;
+}
+.prev{
+	padding-top: 16px;
+  p{
+    line-height: 23px;
+    font-size: 14px;
+    padding-left: 12px;
+	font-family:verdana;
+    text-transform: uppercase;
+  }
+}
+
+
+.data{
+	text-align: right;
+	margin-bottom: 15px;
+	h2{
+		font-size:24px;
+		line-height: 24px;
+		font-family:RobotoSlabBold;
+	}
+	.button-popup{
+		padding-top: 12px;
+		tt{
+			text-decoration: underline;
+			padding-right: 19px;
+		}
+		a{
+			padding: 4px 15px;
+
+		}
+	}
+}
+
+.slider-head{
+	margin-top: 140px;
+	background-color: rgba(0,0,0, 0.6);
+	.slider-prev{
+		text-align: center;
+		max-width: 1180px;
+		position: relative;
+		.arrows-slider{
+			position: absolute;
+			width: 100%;
+			top: 30%;
+			a{
+				width: 20px;
+				height: 44px;
+				display: inline-block;
+				position: absolute;
+				background-repeat: no-repeat;
+			}
+			.left-arrow{
+				display: inline-block;
+				a{
+					left: 0;
+					background-image: url("../img/left-arrow.png");
+				}
+			}
+			.right-arrow{
+				display: inline-block;
+				a{
+					right: 0;
+					background-image: url("../img/right-arrow.png");
+				}
+			}
+		}
+		.lSAction>a{
+			width: 20px;
+			height: 44px;
+			top: 38%;
+		}
+		.lSAction>.lSPrev{
+			background-image: url("../img/left-arrow.png");
+			background-position: center;
+		}
+		.lSAction>.lSNext{
+			background-image: url("../img/right-arrow.png");
+			background-position: center;
+		}
+		.lSAction{
+			display: block !important;
+		}
+		ul{
+			display: inline-block;
+			text-align: center;
+		}
+		li{
+			display: inline-block;
+			text-align: center;
+			vertical-align: top;
+			margin: 0px 23px !important;
+			width: auto !important;
+			float: none !important;
+			padding: 30px 0 24px 0;
+			.sircle-green{
+				width: 230px;
+				height: 230px;
+				margin: 0 auto;
+				border: 8px solid #2ecc71;
+				border-radius: 120px;
+				background-position: center;
+				&:hover{
+					border: none;
+					position: relative;
+					&:after{
+						content: '';
+						width: 100%;
+						height: 100%;
+						left: 0;
+						border-radius: 120px;
+						top: 0;
+						background-color: rgba(46,204,113,0.3);
+						position: absolute;
+					}
+				}
+			}
+			p{
+				padding-top: 19px;
+				color: #fff;
+				font-size:18px;
+				line-height: 23px;
+				font-family:RobotoSlabBold;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.button-form{
+	text-align: center;
+
+	a{
+		margin: 11px 0;
+		font-size: 17.98px;
+		padding: 9.5px 20px;
+	}
 }

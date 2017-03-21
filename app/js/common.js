@@ -113,3 +113,35 @@ $(function() {
 		return false;
 	})
 });
+
+
+
+
+
+
+
+		$('#adaptive').lightSlider({
+			adaptiveHeight:true,
+			item:4,
+			slideMargin:0,
+			loop: false,
+			controls:false
+		});
+
+	$('#adaptive-project').lightSlider({
+		adaptiveHeight:true,
+		item:4,
+		slideMargin:0,
+		loop:true,
+		controls:false,
+	});
+
+
+var swiper = new Swiper('.swiper-container', {
+	pagination: '.swiper-pagination',
+	slidesPerView: 'auto',
+	centeredSlides: true,
+	paginationClickable: true,
+	spaceBetween: 30,
+	initialSlide: 1
+});

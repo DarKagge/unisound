@@ -3,3 +3,27 @@
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RobotoSlabRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoSlabRegular/RobotoSlabRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlabRegular/RobotoSlabRegular.woff") format("woff"), url("../fonts/RobotoSlabRegular/RobotoSlabRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RobotoSlabBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoSlabBold/RobotoSlabBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlabBold/RobotoSlabBold.woff") format("woff"), url("../fonts/RobotoSlabBold/RobotoSlabBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RobotoSlabLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoSlabLight/RobotoSlabLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlabLight/RobotoSlabLight.woff") format("woff"), url("../fonts/RobotoSlabLight/RobotoSlabLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "verdana";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/verdana/verdana.ttf") format("truetype"); }
