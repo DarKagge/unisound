@@ -302,6 +302,28 @@ body textarea:required:valid {
   .tenancy .buttons a {
     padding: 7.5px 26px; }
 
+footer {
+  background-color: #000;
+  color: #fff;
+  padding-top: 42px; }
+  footer h2 {
+    font-size: 18px;
+    text-transform: uppercase; }
+  footer div[class^='col-md-3'] {
+    padding-left: 110px; }
+  footer ul li a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 14px;
+    display: block;
+    line-height: 15px;
+    margin-top: 20px; }
+  footer .left-lic {
+    display: inline-block;
+    margin-top: 170px; }
+  footer .right-lic {
+    margin-top: 170px; }
+
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {

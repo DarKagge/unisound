@@ -402,6 +402,39 @@ body textarea:required:valid{
         }
     }
 }
+
+
+footer{
+    background-color: #000;
+    color: #fff;
+    padding-top: 42px;
+    h2{
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    div[class^= 'col-md-3']{
+        padding-left: 110px;
+    }
+    ul{
+        li{
+            a{
+                color: #fff;
+                text-decoration: underline;
+                font-size: 14px;
+                display: block;
+                line-height: 15px;
+                margin-top: 20px;
+            }
+        }
+    }
+    .left-lic{
+        display: inline-block;
+        margin-top: 170px;
+    }
+    .right-lic{
+        margin-top: 170px;
+    }
+}
 //ALWAYS END
 @import "media.scss";
 @import "sketches.scss";
