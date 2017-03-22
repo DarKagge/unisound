@@ -281,6 +281,7 @@ body textarea:required:valid{
                     text-decoration: none;
                     .circle-cat{
                         position: relative;
+                        background-size: 200%;
                         &:after{
                             content: '';
                             position: absolute;

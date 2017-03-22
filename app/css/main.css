@@ -220,7 +220,8 @@ body textarea:required:valid {
       .item-catalog ul li a:hover {
         text-decoration: none; }
         .item-catalog ul li a:hover .circle-cat {
-          position: relative; }
+          position: relative;
+          background-size: 200%; }
           .item-catalog ul li a:hover .circle-cat:after {
             content: '';
             position: absolute;
