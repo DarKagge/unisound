@@ -340,19 +340,9 @@ footer {
   .item-catalog ul li:last-child {
     margin: 20px 10px; } }
 
-@media only screen and (max-width: 1145px) {
-  .slider-head .slider-prev ul {
-    width: auto !important; }
-    .slider-head .slider-prev ul li {
-      margin: 0 10px !important; } }
-
 @media only screen and (max-width: 1136px) {
   .prev p {
     padding-left: 45px; } }
-
-@media only screen and (max-width: 1060px) {
-  .slider-head .slider-prev ul li {
-    margin: 0 5px !important; } }
 
 @media only screen and (max-width: 1028px) {
   .button-search-container input {

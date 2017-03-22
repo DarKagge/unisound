@@ -97,7 +97,7 @@ $(function() {
 
 
 
-		$('#adaptive').lightSlider({
+		var adaptive = $('#adaptive').lightSlider({
 			adaptiveHeight:true,
 			item:4,
 			slideMargin:0,
@@ -106,28 +106,34 @@ $(function() {
 			controls:false,
 			responsive : [
 				{
-					breakpoint:1041,
+					breakpoint: 1041,
 					settings: {
 						item:3,
-						slideMove:1,
-						slideMargin:6,
+						slideMargin:6
 					}
 				},
 				{
 					breakpoint:800,
 					settings: {
-						item:2,
-						slideMove:1
+						item:2
 					}
 				},
 				{
 					breakpoint:550,
 					settings: {
-						item:1,
-						slideMove:1
+						item:1
 					}
 				}
 			]
+		});
+
+		$(".left-arrow a").on("click",function (e) {
+			e.preventDefault();
+			adaptive.goToPrevSlide();
+		});
+		$(".right-arrow a").on("click",function (e) {
+			e.preventDefault();
+			adaptive.goToNextSlide();
 		});
 
 	$('#adaptive-project').lightSlider({
