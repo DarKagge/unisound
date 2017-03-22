@@ -48,7 +48,8 @@ gulp.task('scripts', function() {
 		'./app/libs/lightslider/dist/js/lightslider.min.js',
 		'./app/libs/swiper/dist/js/swiper.jquery.min.js',
 		'./app/libs/swiper/dist/js/swiper.jquery.umd.min.js',
-		'./app/libs/swiper/dist/js/swiper.min.js'
+		'./app/libs/swiper/dist/js/swiper.min.js',
+		'./app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
 		])
 		.pipe(concat('libs.js'))
 		//.pipe(uglify()) //Minify libs.js
