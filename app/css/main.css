@@ -326,6 +326,20 @@ footer {
   footer .right-lic {
     margin-top: 170px; }
 
+@media only screen and (max-width: 1200px) {
+  .tenancy .item-catalog ul li {
+    margin: 20px 10px; }
+    .tenancy .item-catalog ul li:first-child {
+      margin: 20px 10px; }
+    .tenancy .item-catalog ul li:last-child {
+      margin: 20px 10px; }
+  .item-catalog ul li {
+    margin: 20px 10px; }
+    .item-catalog ul li:first-child {
+      margin: 20px 10px; }
+  .item-catalog ul li:last-child {
+    margin: 20px 10px; } }
+
 @media only screen and (max-width: 1145px) {
   .slider-head .slider-prev ul {
     width: auto !important; }
@@ -365,9 +379,65 @@ footer {
       font-size: 14px;
       padding-left: 0; }
   .data {
-    text-align: center; } }
+    text-align: center; }
+  .left-info {
+    text-align: center;
+    padding-left: 0; }
+  .right-img {
+    margin: 15px auto; }
+  .contacts {
+    text-align: center; }
+  .forma form {
+    padding-left: 0;
+    text-align: center; }
+    .forma form h2 {
+      font-size: 8vw; }
+    .forma form .name {
+      width: 100%;
+      display: block; }
+    .forma form .phones {
+      width: 100%;
+      display: block; }
+  footer {
+    text-align: center; }
+    footer .last-men-for {
+      text-align: center; }
+    footer .sec-men-foot {
+      padding-left: 0; } }
 
-/* Small Devices, Tablets */
+@media only screen and (max-width: 930px) {
+  footer .left-lic {
+    display: block;
+    text-align: center; }
+  footer .right-lic {
+    display: block;
+    float: none !important;
+    text-align: center;
+    margin-top: 10px; } }
+
+@media only screen and (max-width: 900px) {
+  .swiper-slide {
+    min-width: auto !important;
+    width: 100% !important; } }
+
+@media only screen and (max-width: 767px) {
+  .swiper-slide {
+    padding-left: 0;
+    text-align: center;
+    max-height: inherit !important; }
+    .swiper-slide a {
+      margin-top: 50px;
+      margin-bottom: 10px; } }
+
+@media only screen and (max-width: 470px) {
+  .all-title h2 {
+    font-size: 7vw; } }
+
+@media only screen and (max-width: 450px) {
+  .right-img {
+    width: 290px;
+    height: 300px; } }
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 332px) {
   .button-search-container input {
