@@ -49,7 +49,7 @@ body textarea:required:valid {
   background-color: #fff;
   max-height: 388px;
   min-height: 388px;
-  max-width: 945px;
+  max-width: 890px;
   width: 100% !important;
   padding-left: 47px;
   /* Center slide text vertically */

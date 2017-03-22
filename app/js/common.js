@@ -102,6 +102,7 @@ $(function() {
 			item:4,
 			slideMargin:0,
 			loop: false,
+			pager:false,
 			controls:false,
 			responsive : [
 				{
@@ -113,9 +114,16 @@ $(function() {
 					}
 				},
 				{
-					breakpoint:480,
+					breakpoint:800,
 					settings: {
 						item:2,
+						slideMove:1
+					}
+				},
+				{
+					breakpoint:550,
+					settings: {
+						item:1,
 						slideMove:1
 					}
 				}
@@ -136,7 +144,7 @@ var swiper = new Swiper('.swiper-container', {
 	slidesPerView: 'auto',
 	centeredSlides: true,
 	paginationClickable: true,
-	spaceBetween: 30,
+	spaceBetween: 37,
 	initialSlide: 1
 });
 
