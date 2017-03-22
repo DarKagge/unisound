@@ -412,9 +412,6 @@ footer{
         font-size: 18px;
         text-transform: uppercase;
     }
-    div[class^= 'col-md-3']{
-        padding-left: 110px;
-    }
     ul{
         li{
             a{
@@ -426,6 +423,12 @@ footer{
                 margin-top: 20px;
             }
         }
+    }
+    .last-men-for{
+        text-align: right;
+    }
+    .sec-men-foot{
+        padding-left: 100px;
     }
     .left-lic{
         display: inline-block;

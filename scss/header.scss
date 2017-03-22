@@ -100,6 +100,7 @@ body .buttons{
 .search-button{
 	float: left;
 	padding-right: 16px;
+	position: relative;
 	a{
 		background-color: #898989;
 		width:26px;
@@ -109,9 +110,51 @@ body .buttons{
 		background-position: center 6px;
 		background-repeat: no-repeat;
 		display: block;
+		position: relative;
+		z-index: 5;
 
 	}
 }
+.button-search-container{
+	position: absolute;
+	right: 10px;
+	top: -2px;
+	display: none;
+	transition: .5s all;
+	&.active{
+		top: -2px;
+		display: block;
+	}
+	input{
+
+		font-size:16.67px;
+		color: #000;
+		border: 1px solid #cccccc;
+		min-width: 182px;
+		padding-left: 15px;
+		border-radius: 25px;
+		z-index: 69;
+	}
+}
+.btn-search-close{
+	position: absolute;
+	right: 24px;
+	top: 25px;
+	background-image: url("../img/close.png");
+	background-repeat: no-repeat;
+	width: 11px;
+	height: 11px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .social{
 	text-align: center;
@@ -123,6 +166,18 @@ body .buttons{
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .top-white-line{
 	background-color: #fff;
@@ -269,3 +324,164 @@ body .buttons{
 		padding: 9.5px 20px;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+.toggle_mnu {
+	width: 60px;
+	height: 60px;
+	position: relative;
+	background-color: transparent;
+	z-index: 100;
+	border: none;
+}
+.toggle_mnu span {
+	display: block; }
+
+.sandwich {
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	top: 8px;
+	bottom: 0;
+	left: -22px;
+	right: 0;
+	margin: auto;
+	z-index: 200; }
+
+.sw-topper {
+	position: relative;
+	top: 4px;
+	width: 15px;
+	height: 4px;
+	background: #fff;
+	border: none;
+	-webkit-transition: -webkit-transform 0.5s, top 0.2s;
+	transition: transform 0.5s, top 0.2s;
+	display: block; }
+
+
+.sw-bottom {
+	position: relative;
+	width: 15px;
+	height: 4px;
+	top: 6.6px;
+	background: #fff;
+	border: none;
+	-webkit-transition: -webkit-transform 0.5s, top 0.2s;
+	transition: transform 0.5s, top 0.2s;
+	-webkit-transition-delay: 0.2s, 0s;
+	transition-delay: 0.2s, 0s; }
+
+.sw-footer {
+	position: relative;
+	width: 15px;
+	height: 4px;
+	top: 10px;
+	background: #fff;
+	border: none;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s; }
+
+.sandwich.active{
+	position: relative;
+	top: 0;
+}
+.sandwich.active .sw-topper {
+	width: 25px;
+	height: 5px;
+	background-color: #fff;
+	top: 10px;
+	left: 0px;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg); }
+.sandwich.active .sw-bottom {
+	width: 25px;
+	height: 5px;
+	background-color: #fff;
+	top: 5px;
+	left: 0px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg); }
+.sandwich.active .sw-footer {
+	opacity: 0;
+	top: 0;
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg); }
+
+.top_mnu {
+	position: absolute;
+	width:100%;
+	max-width: 230px;
+	background-color: rgba(255, 255, 255, 1);
+	z-index: 70;
+	left: 0;
+	top: 61px;
+	display: none; }
+.top_mnu ul,
+.top_mnu li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	padding-top: 5px;
+
+}
+.top_mnu ul {
+	margin-top: 10px;
+	text-align: left;
+	-webkit-animation-duration: 0.01s;
+	animation-duration: 0.01s; }
+.top_mnu ul li:nth-child(1) a {
+	-webkit-animation-delay: 0;
+	animation-delay: 0; }
+.top_mnu ul li:nth-child(2) a {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s; }
+.top_mnu ul li:nth-child(3) a {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s; }
+.top_mnu ul li:nth-child(4) a {
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s; }
+.top_mnu ul a {
+	color: #0b98cd;
+	display: block;
+	text-transform: uppercase;
+	font-size: 12.5px;
+	position: relative;
+	padding-top: 5px;
+	padding-left: 33px;
+	height: 26px;
+	outline: none;
+	&:hover{
+		background-color: #0b98cd;
+		color: #fff;
+		text-decoration: none;
+	}
+	&:focus{
+		text-decoration: none;
+	}
+}
+.top_mnu ul a span {
+	display: block;
+	position: relative;
+	top: -40px;
+	left: 0;
+	height: 100%;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease; }
+.top_mnu ul a span:hover {
+	background-color: rgba(255, 255, 255, 0.08); }

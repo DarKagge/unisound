@@ -309,8 +309,6 @@ footer {
   footer h2 {
     font-size: 18px;
     text-transform: uppercase; }
-  footer div[class^='col-md-3'] {
-    padding-left: 110px; }
   footer ul li a {
     color: #fff;
     text-decoration: underline;
@@ -318,40 +316,69 @@ footer {
     display: block;
     line-height: 15px;
     margin-top: 20px; }
+  footer .last-men-for {
+    text-align: right; }
+  footer .sec-men-foot {
+    padding-left: 100px; }
   footer .left-lic {
     display: inline-block;
     margin-top: 170px; }
   footer .right-lic {
     margin-top: 170px; }
 
-/* Large Devices, Wide Screens */
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-  .wrapper {
-    width: auto; }
-  .pad {
-    padding: 50px 5px !important; }
-  footer {
+@media only screen and (max-width: 1145px) {
+  .slider-head .slider-prev ul {
+    width: auto !important; }
+    .slider-head .slider-prev ul li {
+      margin: 0 10px !important; } }
+
+@media only screen and (max-width: 1136px) {
+  .prev p {
+    padding-left: 45px; } }
+
+@media only screen and (max-width: 1060px) {
+  .slider-head .slider-prev ul li {
+    margin: 0 5px !important; } }
+
+@media only screen and (max-width: 1028px) {
+  .button-search-container input {
+    min-width: 170px;
+    width: 170px; } }
+
+@media only screen and (max-width: 1000px) {
+  .prev p {
+    padding-left: 45px;
+    font-size: 13px; } }
+
+@media only screen and (max-width: 991px) {
+  .top-line-menu {
+    display: none; }
+  .toggle_mnu {
+    display: inline-block !important; }
+  .social-all {
+    padding-top: 20px; }
+  .logo {
     text-align: center; }
-    footer .wrapper {
-      width: auto; }
-    footer ul {
-      float: none;
-      display: inline-block;
-      text-align: center; }
-      footer ul li {
-        margin-bottom: 10px;
-        margin-right: 0;
-        float: none; }
-    footer .gs {
-      float: none;
-      display: block; } }
+  .prev {
+    text-align: center; }
+    .prev p {
+      font-size: 14px;
+      padding-left: 0; }
+  .data {
+    text-align: center; } }
 
 /* Small Devices, Tablets */
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-  .pad {
-    padding: 20px 5px !important; } }
+@media only screen and (max-width: 332px) {
+  .button-search-container input {
+    width: 150px;
+    min-width: 150px; } }
+
+@media only screen and (max-width: 320px) {
+  .data .button-popup tt {
+    padding-right: 0; }
+  .data .button-popup a {
+    display: block; } }
 
 /* ============================ form css =========================== */
 #modal_callback_ok h3, #modal_callback_ok h4 {
