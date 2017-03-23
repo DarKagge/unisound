@@ -98,10 +98,10 @@ $(function() {
 
 
 		var adaptive = $('#adaptive').lightSlider({
-			adaptiveHeight:true,
 			item:4,
 			slideMargin:0,
-			loop: false,
+			loop: true,
+			auto:true,
 			pager:false,
 			controls:false,
 			responsive : [
@@ -136,18 +136,13 @@ $(function() {
 			adaptive.goToNextSlide();
 		});
 
-	$('#adaptive-project').lightSlider({
-		adaptiveHeight:true,
-		item:4,
-		slideMargin:0,
-		loop:true,
-		controls:false,
-	});
+
 
 
 var swiper = new Swiper('.swiper-container', {
 	pagination: '.swiper-pagination',
 	slidesPerView: 'auto',
+	autoplay: 3000,
 	centeredSlides: true,
 	paginationClickable: true,
 	spaceBetween: 37,

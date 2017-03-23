@@ -210,11 +210,13 @@ body .buttons{
 	}
 	.button-popup{
 		padding-top: 12px;
-		tt{
+		a{
 			text-decoration: underline;
 			padding-right: 19px;
+			background-color: transparent !important;
+			color: #000;
 		}
-		a{
+		button{
 			padding: 4px 15px;
 
 		}
@@ -286,6 +288,8 @@ body .buttons{
 				border: 8px solid #2ecc71;
 				border-radius: 120px;
 				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
 				&:hover{
 					border: none;
 					position: relative;

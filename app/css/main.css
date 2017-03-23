@@ -164,7 +164,7 @@ body textarea:required:valid {
     max-width: 280px;
     margin: 0 8px;
     margin-bottom: 5px;
-    min-height: 420px;
+    min-height: 470px;
     vertical-align: top; }
   .news-items .img-news img {
     width: 100%; }
@@ -194,12 +194,17 @@ body textarea:required:valid {
   text-align: center; }
   .item-catalog ul {
     display: inline-block;
+    text-align: center;
     margin-bottom: 50px; }
     .item-catalog ul li {
       display: inline-block;
       vertical-align: top;
       text-align: center;
-      margin: 0 20px; }
+      margin: 10px 20px; }
+      .item-catalog ul li:nth-child(5n) {
+        margin-left: 0; }
+      .item-catalog ul li:nth-child(4n) {
+        margin-right: 0; }
       .item-catalog ul li:first-child {
         margin-left: 0; }
       .item-catalog ul li:last-child {
@@ -210,7 +215,9 @@ body textarea:required:valid {
         -webkit-border-radius: 152px;
         border-radius: 152px;
         display: block;
-        background-position: center; }
+        background-position: center;
+        -webkit-transition: 2.4s all;
+        transition: 2.4s all; }
       .item-catalog ul li p {
         color: #fff;
         padding-top: 27px;
@@ -218,10 +225,14 @@ body textarea:required:valid {
         text-transform: uppercase;
         font-family: RobotoSlabBold; }
       .item-catalog ul li a:hover {
-        text-decoration: none; }
+        text-decoration: none;
+        -webkit-transition: 2.4s all;
+        transition: 2.4s all; }
         .item-catalog ul li a:hover .circle-cat {
           position: relative;
-          background-size: 200%; }
+          background-size: 200%;
+          -webkit-transition: 2.4s all;
+          transition: 2.4s all; }
           .item-catalog ul li a:hover .circle-cat:after {
             content: '';
             position: absolute;
@@ -265,7 +276,8 @@ body textarea:required:valid {
       -webkit-border-radius: 70px;
       border-radius: 70px;
       height: 46px;
-      width: 100%; }
+      width: 100%;
+      padding-left: 20px; }
     .forma form .name {
       width: 322px;
       display: inline-block;
@@ -435,6 +447,18 @@ footer {
   .right-img {
     width: 290px;
     height: 300px; } }
+
+@media only screen and (max-width: 429px) {
+  body .item-catalog ul li {
+    margin: 20px 20px !important; }
+    body .item-catalog ul li:first-child {
+      margin: 20px 20px !important; }
+    body .item-catalog ul li:nth-child(4n) {
+      margin: 20px 20px !important; }
+    body .item-catalog ul li:nth-child(5n) {
+      margin: 20px 20px !important; }
+    body .item-catalog ul li:last-child {
+      margin: 20px 20px !important; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 332px) {

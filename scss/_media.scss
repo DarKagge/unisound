@@ -196,6 +196,28 @@
 
 	}
 }
+
+@media only screen and (max-width : 429px){
+	body .item-catalog ul {
+		li{
+			margin: 20px 20px !important;
+			&:first-child{
+				margin: 20px 20px !important;
+			}
+			&:nth-child(4n){
+				margin: 20px 20px !important;
+			}
+			&:nth-child(5n){
+				margin: 20px 20px !important;
+			}
+			&:last-child{
+				margin: 20px 20px !important;
+			}
+		}
+	}
+}
+
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 332px) {
 	.button-search-container input{
