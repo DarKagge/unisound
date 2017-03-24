@@ -199,21 +199,26 @@ body textarea:required:valid{
     text-align: center;
     ul{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     li{
         background-color: #fff;
         text-align: left;
         max-width: 280px;
-        margin: 0 8px;
+        margin: 10px 8px;
         margin-bottom: 5px;
         min-height: 470px;
         position: relative;
         padding-bottom: 20px;
+
         vertical-align: top;
     }
     .img-news{
+        min-height: 210px;
         img{
             width: 100%;
+            min-height: 210px;
         }
     }
     .text-item{
