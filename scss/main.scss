@@ -198,16 +198,17 @@ body textarea:required:valid{
 .news-items{
     text-align: center;
     ul{
-        display: inline-block;
+        display: flex;
     }
     li{
-        display: inline-block;
         background-color: #fff;
         text-align: left;
         max-width: 280px;
         margin: 0 8px;
         margin-bottom: 5px;
         min-height: 470px;
+        position: relative;
+        padding-bottom: 20px;
         vertical-align: top;
     }
     .img-news{
@@ -231,6 +232,8 @@ body textarea:required:valid{
             display: inline-block;
             color: #27ae60;
             text-decoration: underline;
+            position: absolute;
+            bottom: 0;
         }
     }
 }
@@ -275,7 +278,9 @@ body textarea:required:valid{
                 border-radius: 152px;
                 display: block;
                 background-position: center;
-                transition: 2.4s all;
+                transition: 2s all;
+                background-repeat: no-repeat;
+                background-size: 180%;
             }
             p{
                 color: #fff;
@@ -291,7 +296,6 @@ body textarea:required:valid{
                     .circle-cat{
                         position: relative;
                         background-size: 200%;
-                        transition: 2.4s all;
                         &:after{
                             content: '';
                             position: absolute;

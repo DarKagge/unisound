@@ -82,6 +82,30 @@ body .buttons{
 .top-line-menu{
 	li{
 		float: left;
+		position: relative;
+		&:hover{
+			.second-top-menu{
+				display: block;
+			}
+		}
+	}
+	.second-top-menu{
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 39px;
+		z-index: 69;
+		a{
+			background-color: #00AA00;
+			padding: 15px;
+			width: 250px;
+			display: block;
+			text-transform: none;
+			&:hover{
+				text-decoration: none;
+				background-color: darken(#00AA00,10);
+			}
+		}
 	}
 	a{
 		display: block;
@@ -92,6 +116,7 @@ body .buttons{
 		text-transform: uppercase;
 		padding: 13px 0;
 	}
+
 }
 .social-all{
 	padding-top: 5px;

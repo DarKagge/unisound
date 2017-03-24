@@ -69,7 +69,26 @@ body .buttons button {
   background-color: rgba(0, 0, 0, 0.7); }
 
 .top-line-menu li {
-  float: left; }
+  float: left;
+  position: relative; }
+  .top-line-menu li:hover .second-top-menu {
+    display: block; }
+
+.top-line-menu .second-top-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 39px;
+  z-index: 69; }
+  .top-line-menu .second-top-menu a {
+    background-color: #00AA00;
+    padding: 15px;
+    width: 250px;
+    display: block;
+    text-transform: none; }
+    .top-line-menu .second-top-menu a:hover {
+      text-decoration: none;
+      background-color: #007700; }
 
 .top-line-menu a {
   display: block;
